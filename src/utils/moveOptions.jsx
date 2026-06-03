@@ -1,5 +1,3 @@
-import { COLORS } from "./pieces";
-
 const moveOptions = (board, selectedSquare) => {
     if (!selectedSquare) return [];
     const { row, col } = selectedSquare;
@@ -168,7 +166,7 @@ const moveOptions = (board, selectedSquare) => {
             break;
         default:
             break;
-    }
+        }
     return moves;
 }
 

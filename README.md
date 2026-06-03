@@ -17,21 +17,21 @@
 - [Development Setup](#development-setup)
 - [Contributing](#contributing)
 
-## 📝 Description
+##  Description
 
 This project is a browser-based chess application built on top of React and styled with Tailwind CSS. It offers an interactive digital chessboard, allowing users to play chess games directly within their web browser. Designed as a lightweight frontend application, it runs entirely client-side without requiring a complex backend infrastructure. The application leverages React state management to track piece positions and game progress, while Vite serves as the build tool to ensure rapid hot-reloading during development and clean production bundles. Tailwind CSS provides the responsive styling necessary to render the board cleanly across both desktop and mobile viewports.
 
 ##  Key Features
 
-- ** React Component Board State** — Component-driven rendering of the chessboard and individual pieces using React.
-- ** Responsive Tailwind CSS Layout** — Responsive layout and styling that automatically adapts the board to various screen sizes.
-- ** Vite Fast Development Server** — Fast development server utilizing Hot Module Replacement for a seamless coding workflow.
+-  ** React Component Board State** — Component-driven rendering of the chessboard and individual pieces using React.
+-  ** Responsive Tailwind CSS Layout** — Responsive layout and styling that automatically adapts the board to various screen sizes.
+-  ** Vite Fast Development Server** — Fast development server utilizing Hot Module Replacement for a seamless coding workflow.
 
 ##  Use Cases
 
 - Playing a quick, self-contained game of chess directly in a desktop or mobile browser.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **JavaScript**
 - **React**
@@ -114,5 +114,3 @@ Contributions are welcome! Here's the standard flow:
 
 Please follow the existing code style and include tests for new behavior where applicable.
 
----
-*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
