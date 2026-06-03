@@ -25,10 +25,10 @@ const check = (board, currentMove) => {
         const row=moves[i].row;
         const col=moves[i].col;
         if(king.row===row && king.col===col){
-            return true;  
+            return king; 
         }
     }
-    return false;
+    return null;
 }
 
 export default check;

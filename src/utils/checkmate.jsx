@@ -11,7 +11,7 @@ const checkmate=(board,currentMove)=>{
                 for(let k=0;k<moves.length;k++){
                     const to=moves[k];
                     const newBoard=movePiece(board,from,to);
-                    if(newBoard!==board){
+                    if(newBoard!==null){
                         return false;
                     }
                 }

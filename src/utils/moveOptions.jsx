@@ -81,10 +81,17 @@ const moveOptions = (board, selectedSquare) => {
     switch (piece.type) {
         case 'pawn':
             const direction = piece.color === 'white' ? -1 : 1;
-            if (!piece.moved && board[row + direction][col] === null) {
+            if (!piece.moved && board[row + direction][col] === null && board[row +2*direction][col] === null) {
                 const nextRow = row + 2 * direction;
                 moves.push({ row: nextRow, col });
             }
+            if(board[row][col + 1] && board[row][col + 1].color !== piece.color && board[row][col+1].type === 'pawn' && board[row][col + 1].enPassant) {
+                moves.push({ row: row + direction, col: col + 1 });
+            }
+            if(board[row][col - 1] && board[row][col - 1].color !== piece.color && board[row][col-1].type === 'pawn' && board[row][col - 1].enPassant) {
+                moves.push({ row: row + direction, col: col - 1 });
+            }
+                
             const nextRow = row + direction;
             if (board[nextRow]) {
                 if (!board[nextRow][col]) {
