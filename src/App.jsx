@@ -153,9 +153,9 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-4 border border-gray-400">
+    <div className="flex flex-col items-center p-4">
       <h1 className="text-3xl font-bold mb-4">Chess Game</h1>
-      <div className="relative">
+      <div className="relative flex flex-col items-center justify-center">
         <div className="grid grid-cols-8 border border-black cursor-pointer">
           {board.map((row, rowIndex) =>
             row.map((square, colIndex) => {
@@ -164,7 +164,7 @@ const App = () => {
               return (
                 <div
                   key={`${rowIndex}-${colIndex}`}
-                  className={`relative w-16 h-16 border border-gray-400 flex items-center justify-center ${checked !== null && checked.row === rowIndex && checked.col === colIndex
+                  className={`relative aspect-square border border-gray-400 flex items-center justify-center ${checked !== null && checked.row === rowIndex && checked.col === colIndex
                     ? "bg-red-500"
                     : selectedSquare && selectedSquare.row === rowIndex && selectedSquare.col === colIndex
                       ? "bg-yellow-300"
@@ -251,7 +251,7 @@ const App = () => {
             </div>
           </div>
         )}
-        <div className="font-extrabold text-4xl">Move : {currentMove}</div>
+        <div className=" font-extrabold text-4xl">Move : {currentMove}</div>
       </div>
       {invalidMove && (
         <div className="bg-amber-200 px-4 py-2 mt-2 rounded">
