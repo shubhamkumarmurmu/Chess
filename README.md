@@ -1,4 +1,4 @@
-# Chess
+# Chess Game Web Application
 
 > An interactive web-based chess game built with React and Tailwind CSS.
 
