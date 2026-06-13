@@ -254,8 +254,9 @@ const App = () => {
         <div className=" font-extrabold text-4xl">Move : {currentMove}</div>
       </div>
       {invalidMove && (
-        <div className="bg-amber-200 px-4 py-2 mt-2 rounded">
-          Invalid Move
+        <div className="flex flex-col items-center bg-amber-200 px-4 py-2 mt-2 rounded">
+          <text>You can't move the piece to this certain postion</text>
+          <text>Check is still there</text>
         </div>
       )}
     </div>
